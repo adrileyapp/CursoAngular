@@ -1,5 +1,6 @@
-class Pessoa {  
-    private carro: any
+import { Carro } from './Carro';
+export class Pessoa {  
+    private carro: Carro
     constructor( private nome: string,
         private carroPreferido: string) {
             
@@ -13,11 +14,11 @@ class Pessoa {
         return this.carroPreferido
     }
 
-    public comprarCarror(carro: any): void {
+    public comprarCarro(carro: Carro): void {
         this.carro = carro
     }
 
-    public dizerCarroQueTem(): any {
+    public dizerCarroQueTem(): Carro {
         return this.carro
     }
 }

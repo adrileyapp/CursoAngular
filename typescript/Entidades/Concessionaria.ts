@@ -1,14 +1,15 @@
+import { Carro } from './Carro';
 export class Concessionaria {
    
-    private listaDeCarros: any
+  
 
-    constructor( private endereco: string) { }
+    constructor( private endereco: string,  private listaDeCarros:Array<Carro>) { }
 
     public fornecerEndereco(): string {
         return this.endereco
     }
 
-    public mostrarListaDeCarros(): any {
+    public mostrarListaDeCarros(): Array<Carro> {
         return this.listaDeCarros
     }
 }

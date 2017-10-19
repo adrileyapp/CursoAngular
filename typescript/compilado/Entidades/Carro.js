@@ -1,31 +1,24 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
-var Carro = /** @class */ (function () {
-    function Carro(modelo, numeroDePortas, velocidade) {
-        if (velocidade === void 0) { velocidade = 0; }
-        this.modelo = modelo;
-        this.numeroDePortas = numeroDePortas;
-        this.velocidade = velocidade;
+var Veiculo_1 = require("./Veiculo");
+var Carro = /** @class */ (function (_super) {
+    __extends(Carro, _super);
+    function Carro(modelo, numeroDePortas) {
+        var _this = _super.call(this) || this;
+        _this.numeroDePortas = numeroDePortas;
+        return _this;
+        // this.modelo= modelo;
     }
-    Carro.prototype.acelerar = function () {
-        this.velocidade = this.velocidade + 10;
-    };
-    Carro.prototype.parar = function () {
-        this.velocidade = 0;
-    };
-    Carro.prototype.velocidadeAtual = function () {
-        return this.velocidade;
-    };
     return Carro;
-}());
+}(Veiculo_1.Veiculo));
 exports.Carro = Carro;
-/*
-videos : Array<Video>;
-constructor(){
-this.videos = [
-new Video(1,"Test","www.test.com","Test Description"),
-new Video(2,"Test 2","www.test2.com","Test Description")
-]
-}
-
-**/ 

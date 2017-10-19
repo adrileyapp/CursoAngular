@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Pessoa = /** @class */ (function () {
     function Pessoa(nome, carroPreferido) {
         this.nome = nome;
@@ -10,7 +11,7 @@ var Pessoa = /** @class */ (function () {
     Pessoa.prototype.dizerCarroPreferido = function () {
         return this.carroPreferido;
     };
-    Pessoa.prototype.comprarCarror = function (carro) {
+    Pessoa.prototype.comprarCarro = function (carro) {
         this.carro = carro;
     };
     Pessoa.prototype.dizerCarroQueTem = function () {
@@ -18,3 +19,4 @@ var Pessoa = /** @class */ (function () {
     };
     return Pessoa;
 }());
+exports.Pessoa = Pessoa;
