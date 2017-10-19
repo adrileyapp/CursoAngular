@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Carro = /** @class */ (function () {
     function Carro(modelo, numeroDePortas, velocidade) {
         if (velocidade === void 0) { velocidade = 0; }
@@ -17,3 +18,14 @@ var Carro = /** @class */ (function () {
     };
     return Carro;
 }());
+exports.Carro = Carro;
+/*
+videos : Array<Video>;
+constructor(){
+this.videos = [
+new Video(1,"Test","www.test.com","Test Description"),
+new Video(2,"Test 2","www.test2.com","Test Description")
+]
+}
+
+**/ 

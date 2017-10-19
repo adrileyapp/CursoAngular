@@ -1,4 +1,4 @@
-class Concessionaria {
+export class Concessionaria {
    
     private listaDeCarros: any
 

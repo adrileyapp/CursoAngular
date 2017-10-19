@@ -1,7 +1,7 @@
-class Carro {  
+export class Carro {  
  
    constructor(private modelo: string , private numeroDePortas: number, private velocidade: number = 0) {
-       
+ 
    }
 
     public acelerar(): void {
@@ -16,3 +16,16 @@ class Carro {
         return this.velocidade
     }
 }
+   
+ 
+
+/*
+videos : Array<Video>;
+constructor(){
+this.videos = [
+new Video(1,"Test","www.test.com","Test Description"),
+new Video(2,"Test 2","www.test2.com","Test Description")
+]
+}
+
+**/

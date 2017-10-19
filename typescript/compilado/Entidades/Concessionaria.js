@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Concessionaria = /** @class */ (function () {
     function Concessionaria(endereco) {
         this.endereco = endereco;
@@ -11,3 +12,4 @@ var Concessionaria = /** @class */ (function () {
     };
     return Concessionaria;
 }());
+exports.Concessionaria = Concessionaria;
