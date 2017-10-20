@@ -1,30 +1,28 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Concessionaria_1 = require("./Concessionaria");
-var ConcessionariaDao = /** @class */ (function () {
-    function ConcessionariaDao() {
-        this.nomeTable = 'tb_Concessionaria';
+/*
+export class ConcessionariaDao implements daointerface{
+
+    nomeTable: string = 'tb_Concessionaria';
+    Insert(object: any): boolean {
+       console.log('Inserir');
+       return true;
     }
-    ConcessionariaDao.prototype.Insert = function (object) {
-        console.log('Inserir');
-        return true;
-    };
-    ConcessionariaDao.prototype.Atualizar = function (object) {
+    Atualizar(object: any): boolean {
         console.log('Atualizar');
         return true;
-    };
-    ConcessionariaDao.prototype.Remover = function (id) {
+    }
+    Remover(id: number) {
         console.log('Deletar');
         return null;
-    };
-    ConcessionariaDao.prototype.select = function (id) {
+    }
+    select(id: number) {
         console.log('Localizar 1');
-        return new Concessionaria_1.Concessionaria('', []);
-    };
-    ConcessionariaDao.prototype.selecionarTodos = function () {
+        return new Concessionaria('',[]);
+    }
+    selecionarTodos(): [any] {
         console.log('Localizar Todos ');
-        return [new Concessionaria_1.Concessionaria('', [])];
-    };
-    return ConcessionariaDao;
-}());
-exports.ConcessionariaDao = ConcessionariaDao;
+        return [new Concessionaria('',[])];
+    }
+    
+}*/ 

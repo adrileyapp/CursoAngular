@@ -1,5 +1,6 @@
 import { Concessionaria } from './Concessionaria';
 import { daointerface } from './daoInterface';
+/*
 export class ConcessionariaDao implements daointerface{
 
     nomeTable: string = 'tb_Concessionaria';
@@ -24,4 +25,4 @@ export class ConcessionariaDao implements daointerface{
         return [new Concessionaria('',[])];
     }
     
-}
+}*/

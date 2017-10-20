@@ -1,10 +1,10 @@
-export interface daointerface{
+export interface daointerface<T>{
     nomeTable : string;
-    Insert(object : any)    : boolean; 
-    Atualizar(object : any) : boolean;     
-    Remover(id :number)     : any; 
-    select (id:number) : any;
-    selecionarTodos():[any];
+    Insert(object :T)    : boolean; 
+    Atualizar(object : T) : boolean;     
+    Remover(id :number)     :T; 
+    select (id:number) : T;
+    selecionarTodos():[T];
     
     
 }

@@ -1,5 +1,5 @@
 import { Pessoa } from './Pessoa'; 
-import { daointerface } from './daoInterface'; 
+import { daointerface } from './daoInterface'; /*
 export class PessoaDao implements daointerface{
 
     nomeTable: string = 'tb_pessoa';
@@ -24,4 +24,4 @@ export class PessoaDao implements daointerface{
         return [new Pessoa('','')];
     }
     
-}
+}*/

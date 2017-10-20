@@ -1,19 +1,27 @@
-import { PessoaDao } from './Entidades/DaoPessoa';
-import { ConcessionariaDao } from './Entidades/ConcessionariaDao';
+//import { PessoaDao } from './Entidades/DaoPessoa';
+//import { ConcessionariaDao } from './Entidades/ConcessionariaDao';
 import { Veiculo } from './Entidades/Veiculo';
 import { Motos } from './Entidades/Moto';
 import { Carro}          from './Entidades/Carro';
 import { Concessionaria } from './Entidades/Concessionaria';
 import { Pessoa }         from "./Entidades/Pessoa";
- 
+import { Dao } from "./Entidades/dao";
 
- let Dao: ConcessionariaDao = new ConcessionariaDao();
- let concessionaria = new Concessionaria('',[]);
+
+  let concessionaria = new Concessionaria('',[]);
+  let pessoa : Pessoa = new Pessoa('','');
+  let dao: Dao<Concessionaria> = new Dao<Concessionaria>() ;
+  let dao2: Dao<Pessoa> = new Dao<Pessoa>() ;
+  dao.Atualizar(concessionaria);
+  dao2.Remover(5);
+  
+/* let Dao: ConcessionariaDao = new ConcessionariaDao();
+
  Dao.Insert(concessionaria);
  let pessoadao : PessoaDao = new PessoaDao();
- let pessoa : Pessoa = new Pessoa('','');
- pessoadao.Atualizar(pessoa);
  
+ pessoadao.Atualizar(pessoa);
+ */
 /*
 
 let carro  = new Carro('GOL',2);

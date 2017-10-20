@@ -1,15 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var DaoPessoa_1 = require("./Entidades/DaoPessoa");
-var ConcessionariaDao_1 = require("./Entidades/ConcessionariaDao");
 var Concessionaria_1 = require("./Entidades/Concessionaria");
 var Pessoa_1 = require("./Entidades/Pessoa");
-var Dao = new ConcessionariaDao_1.ConcessionariaDao();
+var dao_1 = require("./Entidades/dao");
 var concessionaria = new Concessionaria_1.Concessionaria('', []);
-Dao.Insert(concessionaria);
-var pessoadao = new DaoPessoa_1.PessoaDao();
 var pessoa = new Pessoa_1.Pessoa('', '');
-pessoadao.Atualizar(pessoa);
+var dao = new dao_1.Dao();
+var dao2 = new dao_1.Dao();
+dao.Atualizar(concessionaria);
+dao2.Remover(5);
+/* let Dao: ConcessionariaDao = new ConcessionariaDao();
+
+ Dao.Insert(concessionaria);
+ let pessoadao : PessoaDao = new PessoaDao();
+ 
+ pessoadao.Atualizar(pessoa);
+ */
 /*
 
 let carro  = new Carro('GOL',2);
