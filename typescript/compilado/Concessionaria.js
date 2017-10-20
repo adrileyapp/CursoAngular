@@ -1,13 +1,18 @@
 "use strict";
 var Concessionaria = /** @class */ (function () {
-    function Concessionaria(endereco) {
-        this.endereco = endereco;
+    /**
+     *
+     */
+    function Concessionaria(Endereco) {
+        this.Endereco = Endereco;
     }
-    Concessionaria.prototype.fornecerEndereco = function () {
-        return this.endereco;
+    Concessionaria.prototype.ForneceEndereco = function () {
+        return this.Endereco;
     };
-    Concessionaria.prototype.mostrarListaDeCarros = function () {
-        return this.listaDeCarros;
+    Concessionaria.prototype.MostrarListaDeCarros = function () {
+        return this.ListaDeCarros;
     };
     return Concessionaria;
 }());
+var Concessionarias = new Concessionaria('SQ 15 Quadra 01 casa 14 ');
+console.log(Concessionarias);

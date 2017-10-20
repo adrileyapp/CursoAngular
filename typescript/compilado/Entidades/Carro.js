@@ -16,8 +16,8 @@ var Carro = /** @class */ (function (_super) {
     function Carro(modelo, numeroDePortas) {
         var _this = _super.call(this) || this;
         _this.numeroDePortas = numeroDePortas;
+        _this.modelo = modelo;
         return _this;
-        // this.modelo= modelo;
     }
     return Carro;
 }(Veiculo_1.Veiculo));

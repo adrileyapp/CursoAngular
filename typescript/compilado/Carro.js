@@ -1,19 +1,24 @@
 "use strict";
 var Carro = /** @class */ (function () {
-    function Carro(modelo, numeroDePortas, velocidade) {
-        if (velocidade === void 0) { velocidade = 0; }
-        this.modelo = modelo;
-        this.numeroDePortas = numeroDePortas;
-        this.velocidade = velocidade;
+    function Carro(Modelo, NumeroPortas, Velocidade) {
+        if (Velocidade === void 0) { Velocidade = 0; }
+        this.Modelo = Modelo;
+        this.NumeroPortas = NumeroPortas;
+        this.Velocidade = Velocidade;
     }
-    Carro.prototype.acelerar = function () {
-        this.velocidade = this.velocidade + 10;
+    Carro.prototype.Acelerar = function () {
+        this.Velocidade = this.Velocidade + 10;
     };
-    Carro.prototype.parar = function () {
-        this.velocidade = 0;
+    Carro.prototype.Para = function () {
+        this.Velocidade = 0;
     };
-    Carro.prototype.velocidadeAtual = function () {
-        return this.velocidade;
+    Carro.prototype.VelocidadeAtual = function () {
+        return this.Velocidade;
     };
     return Carro;
 }());
+/*
+  let carro1 = new Carro();
+  let carro2 = new Carro();
+  let carro3 = new Carro();
+  */
