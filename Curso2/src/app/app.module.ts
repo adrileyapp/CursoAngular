@@ -8,8 +8,6 @@ import { TentativaComponent } from './tentativa/tentativa.component';
 import { PainelComponent } from './painel/painel.component';
 
 import { PrincipalComponent } from './principal/principal.component';
-import { AppComponent } from "./app.component";
-import { TopoComponent } from './Controlador_Layout/topo/topo.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +21,6 @@ import { TopoComponent } from './Controlador_Layout/topo/topo.component';
     BrowserModule
   ],
   providers: [],
-  bootstrap: [PrincipalComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
