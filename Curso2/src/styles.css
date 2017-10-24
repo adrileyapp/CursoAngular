@@ -6,3 +6,13 @@
 .navbar{
   background: #1cb0f6
 }
+.jumbotron {
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+.progress {
+  background: #eef8da;
+  border-color: chartreuse;
+}
