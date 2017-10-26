@@ -1,3 +1,4 @@
+import { ServicosFraseService } from './servicos/servicos-frase.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -20,7 +21,7 @@ import { PrincipalComponent } from './principal/principal.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ServicosFraseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,11 +7,7 @@ import { Component, OnInit } from '@angular/core';
 
 
  export class AppComponent implements OnInit {
-  v(){
-    alert('Verificar ');
-
-  }
-  title = 'Vhs Desenvolvimento.';
+ title = 'Vhs Desenvolvimento.';
   constructor() {}
   ngOnInit() {}
 }
