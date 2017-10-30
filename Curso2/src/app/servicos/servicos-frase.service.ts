@@ -11,7 +11,8 @@ export class ServicosFraseService {
     this.FRASES = [
       new Frase('I like to learn', 'Eu Gosto de Aprender'),
       new Frase('I watch tv', 'Eu Assisto TV'),
-      new Frase('close to you', 'Fechado para voce')
+      new Frase('close to you', 'Fechado para você'),
+      new Frase('mama come home' , 'venha mainha')
     ];
        return this.FRASES;
    }
