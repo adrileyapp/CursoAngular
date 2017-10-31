@@ -36,14 +36,9 @@ public progresso : number = 0 ;
       this.RaodaFase = this.frases[this.Rodada];
       this.Resposta = "";
    }else{
-     alert('Tradução Errada ! ');
-
-   }
-
-
+     alert('Tradução Errada ! '); }
     }
-
-  ngOnInit() {
+     ngOnInit() {
   }
 
 }

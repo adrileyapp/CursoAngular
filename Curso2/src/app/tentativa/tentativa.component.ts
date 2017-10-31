@@ -7,20 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tentativa.component.css']
 })
 export class TentativaComponent implements OnInit {
-   public coracaoCheio = '/assets/coracao_cheio.png';
-   public coracaoVazio = '/assets/coracao_vazio.png';
+  public coracaoCheio = '/assets/coracao_cheio.png';
+  public coracaoVazio = '/assets/coracao_vazio.png';
   public coracaoes: Coracao[]= [
-      new Coracao(true), new Coracao(true), new Coracao(true)
-
+       new Coracao(true), new Coracao(true), new Coracao(true)
    ]
-
-  constructor() {
+    constructor() {
     console.log(this.coracaoes);
-
-
-   }
-
+  }
   ngOnInit() {
   }
-
 }

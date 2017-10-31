@@ -1,5 +1,3 @@
 
- <div *ngFor="let item of coracaoes">
-  <img [src]="coracaoCheio">
+  <img *ngFor="let item of coracaoes" [src]="item.ExibeCoracao()">
 
- </div>
